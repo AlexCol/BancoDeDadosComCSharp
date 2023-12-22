@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -30,6 +32,13 @@ PessoaService é uma implementação concreta de IMyService<Pessoa>.
     operações de banco de dados.
 */
 builder.Services.AddScoped<IMyService<Pessoa>, PessoaService>();
+
+
+string conectionString = builder.Configuration["ConnectionStrings:MySql"];
+builder.Services.AddMySql<ApplicationDbContext>(conectionString, ServerVersion.AutoDetect(conectionString));
+builder.Services.AddScoped<IMyService2<Pessoa>, PessoaService2>();
+
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 

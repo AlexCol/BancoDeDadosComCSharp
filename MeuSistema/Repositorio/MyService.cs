@@ -1,6 +1,7 @@
 public abstract class MyService<T> : IMyService<T>
 {
     protected readonly IConnectionFactory connectionFactory;
+    protected readonly ApplicationDbContext _context;
 
     public MyService(IConnectionFactory connectionFactory)
     {

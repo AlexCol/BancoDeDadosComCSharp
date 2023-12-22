@@ -49,3 +49,8 @@ D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\obj\Debug\net6.0\
 D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\obj\Debug\net6.0\MeuSistema.pdb
 D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\obj\Debug\net6.0\MeuSistema.genruntimeconfig.cache
 D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\obj\Debug\net6.0\ref\MeuSistema.dll
+D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\bin\Debug\net6.0\Humanizer.dll
+D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\meusRepos\MeusExemplosNovo\BancoDeDadosComCSharp\MeuSistema\bin\Debug\net6.0\System.CodeDom.dll
