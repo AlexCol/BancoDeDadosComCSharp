@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 public class ApplicationDbContext : DbContext
 {
     public DbSet<Pessoa> Pessoa { get; set; }
+    public DbSet<Livro> Livro { get; set; }
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
     }

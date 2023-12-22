@@ -38,7 +38,10 @@ string conectionString = builder.Configuration["ConnectionStrings:MySql"];
 builder.Services.AddMySql<ApplicationDbContext>(conectionString, ServerVersion.AutoDetect(conectionString));
 builder.Services.AddScoped<IMyService2<Pessoa>, PessoaService2>();
 
-builder.Services.AddControllersWithViews();
+//+builder.Services.AddMySql<ApplicationDbContext>(conectionString, ServerVersion.AutoDetect(conectionString));
+builder.Services.AddScoped<IMyGenericService<Pessoa>, PessoaService3>(); //se precisar de alguma funcionalidade especifica, pode-se criar o servico próprio
+builder.Services.AddScoped(typeof(IMyGenericService<>), typeof(MyGenericService<>)); //para tabelas sem um servico proprio, pode-se usar o genrico pro caso de nao haver regras especificas
+
 
 var app = builder.Build();
 

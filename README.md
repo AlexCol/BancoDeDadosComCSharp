@@ -481,3 +481,13 @@ dotnet ef database update --(realiza carga do migration criado pro banco de dado
 - Para atualizar com put: https://localhost:7297/Pessoa2 (passando um json no body com os campos da pessoa - com id)
 
 ### Lembrando que é um exemplo simples, não sendo tratado aqui erros caso itens não existam
+
+# Adcionada pasta 'TesteComGenerics' 
+*Nela testo a funcionalidade serviço generico para salvar em banco. De modo que precisa apenas de uma implementação para qualquer classe, com a possibildiade de criar uma classe proprio. Ex. classes Livro e Pessoa, somente pessoa tem uma implementação propria no caso de um dos serviços.*
+- Fora o que tem na pasta TesteComGenerics, foi criado a Classe Livro em Dominio e implementado na Program.cs
+```CShap
+builder.Services.AddScoped<IMyGenericService<Pessoa>, PessoaService3>();
+builder.Services.AddScoped(typeof(IMyGenericService<>), typeof(MyGenericService<>));
+regras especificas
+```
+
